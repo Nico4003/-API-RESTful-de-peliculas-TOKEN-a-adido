@@ -1,0 +1,19 @@
+{
+  "name": "api-restful-peliculas",
+  "version": "1.0.0",
+  "description": "API RESTful de películas usando Express, Sequelize y SQLite",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.3",
+    "sequelize": "^6.34.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
