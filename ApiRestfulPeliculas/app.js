@@ -12,6 +12,17 @@ app.use(logger);
 app.use('/login', loginRouter);
 app.use('/peliculas', validarToken, peliculasRouter);
 
+app.get('/', (req, res) => {
+  res.json({
+    api: 'API RESTful de Películas',
+    estado: 'online',
+    endpoints: [
+      '/login',
+      '/peliculas'
+    ]
+  });
+});
+
 app.use((req, res) => {
   res.status(404).json({ error: 'Ruta no encontrada' });
 });
